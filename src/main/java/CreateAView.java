@@ -71,6 +71,7 @@ public class CreateAView {
         try {
             Connection connection = ConnectionUtil.getConnection();
             Statement s = connection.createStatement();
+            s.executeUpdate("DROP VIEW IF EXISTS firstname_lastname;");
             s.executeUpdate(sql);
 
         } catch (SQLException e) {
