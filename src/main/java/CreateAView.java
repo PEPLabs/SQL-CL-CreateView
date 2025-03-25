@@ -57,6 +57,8 @@ public class CreateAView {
      *      |3      |'Steve'               |'Jones'                 |29       |
      *      |4      |'Brandon'             |'Smith'                 |50       |
      *      |5      |'Adam'                |'Jones'                 |61       |
+     *
+     * NOTE: Please write the SQL statement on a single line (do not use multi-line formatting).
      */
 
 
@@ -65,6 +67,7 @@ public class CreateAView {
         /**
          * problem1: Create a view called "firstname_lastname" in problem1.sql from the site_user table that only has the firstname and lastname columns.
          * NOTE: This table should NOT have the id and age.
+         * NOTE: Please write the SQL statement on a single line (do not use multi-line formatting).
          */
         String sql = FileUtil.parseSQLFile("problem1.sql");
 
