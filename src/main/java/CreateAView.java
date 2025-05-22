@@ -64,13 +64,18 @@ public class CreateAView {
     public void problem1(){
         /**
          * problem1: Create a view called "firstname_lastname" in problem1.sql from the site_user table that only has the firstname and lastname columns.
+         *
          * NOTE: This table should NOT have the id and age.
+         *
+         * NOTE: Please write the SQL statement on a single line (do not use multi-line formatting).
+         *
          */
         String sql = FileUtil.parseSQLFile("problem1.sql");
 
         try {
             Connection connection = ConnectionUtil.getConnection();
             Statement s = connection.createStatement();
+            s.executeUpdate("DROP VIEW IF EXISTS firstname_lastname;");
             s.executeUpdate(sql);
 
         } catch (SQLException e) {
